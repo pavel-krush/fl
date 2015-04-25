@@ -94,19 +94,6 @@ char *parse_until_space(const char **src) {
 }
 
 void do_command(const char *command_line) {
-	/*
-		print "commands:\n";
-		print "h|help                      Help\n";
-		print "i|info                      Show info about each file\n"
-		print "o|open ID MODE              Open file with specific mode\n";
-		print "l|lock ID OPERATION         Lock\unlock file. Valid operations are: sh, ex, un, nb\n";
-		print "c|close ID                  Close file\n";
-		print "s|seek ID [-]OFFSET WHENCE  Seek file. whence: set, end, cur\n";
-		print "t|tell ID                   Tell\n";
-		print "w|write ID DATA             Write data to current position\n";
-		print "r|read ID LENGTH            Read LENGTH bytes\n";
-		print "truncate ID LENGTH          Truncate file to LENGTH bytes\n";
-	*/
 	skip_spaces(&command_line);
 
 	char *command = parse_word(&command_line);

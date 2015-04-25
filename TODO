@@ -3,4 +3,3 @@
 - Add more stats to <info> command
 - inotify
 - Refactor ugly exec_read function
-- Implement usage function
